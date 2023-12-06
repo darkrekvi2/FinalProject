@@ -15,7 +15,7 @@
             </StackPanel>
             
             <StackPanel Margin="0 20 0 0">
-                <Button Click="Button_OnClick" Margin="0 0 0 10" HorizontalContentAlignment="Center" Width="150" FontSize="15" HorizontalAlignment="Center" Foreground="white" Background="Purple">Проверки</Button>
+                <Button Click="CheckingWindow" Margin="0 0 0 10" HorizontalContentAlignment="Center" Width="150" FontSize="15" HorizontalAlignment="Center" Foreground="white" Background="Purple">Проверки</Button>
                 <Button Click="AreasWindow" Margin="0 0 0 10" HorizontalContentAlignment="Center" Width="150" FontSize="15" HorizontalAlignment="Center" Foreground="white" Background="Purple">Сотрудники</Button>
                 <Button Click="Exit" HorizontalContentAlignment="Center" Width="150" FontSize="15" HorizontalAlignment="Center" Foreground="white" Background="Purple">Выход</Button>
             </StackPanel>

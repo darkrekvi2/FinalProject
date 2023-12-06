@@ -14,10 +14,15 @@
             </StackPanel>
             
             <StackPanel Margin="0 0 0 10" Orientation="Vertical" HorizontalAlignment="Center">
+                <TextBlock Width="150" Margin="0 0 0 10" HorizontalAlignment="Center">Сотрудник</TextBlock>
                 <ComboBox Width="150" Margin="0 0 0 10" Name="EmployeeComboBox" HorizontalAlignment="Center"></ComboBox>
+                <TextBlock Width="150" Margin="0 0 0 10" HorizontalAlignment="Center">Среда</TextBlock>
                 <ComboBox Width="150" Margin="0 0 0 10" Name="DepartmentComboBox" HorizontalAlignment="Center"></ComboBox>
+                <TextBlock Width="150" Margin="0 0 0 10" HorizontalAlignment="Center">Область</TextBlock>
                 <ComboBox Width="150" Margin="0 0 0 10" Name="AreaComboBox" HorizontalAlignment="Center"></ComboBox>
+                <TextBlock Width="150" Margin="0 0 0 10" HorizontalAlignment="Center">Дата проверки</TextBlock>
                 <DatePicker Margin="0 0 0 10" Name="DateTextBox" HorizontalAlignment="Center"></DatePicker>
+                <TextBlock Width="150" Margin="0 0 0 10" HorizontalAlignment="Center">Результат</TextBlock>
                 <ComboBox Width="150" Name="ResultComboBox" HorizontalAlignment="Center"></ComboBox>
             </StackPanel>
             

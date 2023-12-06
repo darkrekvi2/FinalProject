@@ -14,6 +14,7 @@
             </StackPanel>
             
             <StackPanel Margin="0 0 0 10" HorizontalAlignment="Center" Orientation="Vertical">
+                <TextBlock Width="150" Margin="0 0 0 10" HorizontalAlignment="Center">Название</TextBlock>
                 <TextBox HorizontalAlignment="Center" Name="AreaNameTextBox"></TextBox>
             </StackPanel>
             

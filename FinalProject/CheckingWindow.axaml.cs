@@ -91,34 +91,32 @@ public partial class CheckingWindow : Window
     private void Sorting(object? sender, RoutedEventArgs e)
     {
         if (check == true)
-        {
-            check = false;
+        { check = false;
             ShowTable(
-                "select check_id, employee, Employees.employee_name, department, Departments.department_name, area, Areas.area_name, check_date, result, Results.result_name from Checkings " +
+                "select check_id, employee, Employees.employee_name, department, " +
+                "Departments.department_name, area, Areas.area_name, check_date, result, Results.result_name from Checkings " +
                 "join Employees on Checkings.employee = Employees.id " +
                 "join Departments on Checkings.department = Departments.id " +
                 "join Areas on Checkings.area = Areas.id " +
                 "join Results on Checkings.result = Results.id " +
                 "order by check_id asc");
-            
         }
-
         else
-        {
-            check = true;
+        { check = true;
             ShowTable(
-                "select check_id, employee, Employees.employee_name, department, Departments.department_name, area, Areas.area_name, check_date, result, Results.result_name from Checkings " +
+                "select check_id, employee, Employees.employee_name, department," +
+                " Departments.department_name, area, Areas.area_name, check_date, result, Results.result_name from Checkings " +
                 "join Employees on Checkings.employee = Employees.id " +
                 "join Departments on Checkings.department = Departments.id " +
                 "join Areas on Checkings.area = Areas.id " +
                 "join Results on Checkings.result = Results.id " +
                 "order by check_id desc");
-            
         }
     }
     private void TxtSearch_OnTextChanged(object? sender, TextChangedEventArgs e)
     {
-        string searchSql = "select check_id, employee, Employees.employee_name, department, Departments.department_name, area, Areas.area_name, check_date, result, Results.result_name from Checkings " +
+        string searchSql = "select check_id, employee, Employees.employee_name, department, " +
+                           "Departments.department_name, area, Areas.area_name, check_date, result, Results.result_name from Checkings " +
                           "join Employees on Checkings.employee = Employees.id " +
                           "join Departments on Checkings.department = Departments.id " +
                           "join Areas on Checkings.area = Areas.id " +

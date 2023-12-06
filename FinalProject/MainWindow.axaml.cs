@@ -12,7 +12,7 @@ public partial class MainWindow : Window
         db.CloseConnection();
     }
 
-    private void Button_OnClick(object? sender, RoutedEventArgs e)
+    private void CheckingWindow(object? sender, RoutedEventArgs e)
     {
         CheckingWindow win = new CheckingWindow();
         win.Show();

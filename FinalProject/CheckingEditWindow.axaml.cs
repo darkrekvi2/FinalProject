@@ -95,13 +95,14 @@ public partial class CheckingEditWindow : Window
         }
     }
 
-    private void AddChecking(object? sender, RoutedEventArgs e)
+    private void EditChecking(object? sender, RoutedEventArgs e)
     {
         DB db = new DB();
 
         string _sql = "SELECT * FROM Checkings";
         
-        MySqlCommand command = new MySqlCommand("UPDATE Checkings SET employee = @employee, department = @department, area = @area, check_date = @check_date, result = @result " +
+        MySqlCommand command = new MySqlCommand("UPDATE Checkings SET employee = @employee, department = @department, " +
+                                                "area = @area, check_date = @check_date, result = @result " +
                                                 "WHERE check_id = @id",db.GetConnection());
         command.Parameters.Add("@id", MySqlDbType.Int32).Value = Convert.ToInt32(idTextBox.Text);
         command.Parameters.Add("@employee", MySqlDbType.Int32).Value = EmployeeComboBox.SelectedIndex+1;
@@ -118,5 +119,11 @@ public partial class CheckingEditWindow : Window
         w.Show();
         this.Close();
     }
-    
+
+    private void Cancel(object? sender, RoutedEventArgs e)
+    {
+        MainWindow win = new MainWindow();
+        win.Show();
+        this.Close();
+    }
 }

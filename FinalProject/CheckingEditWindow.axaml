@@ -14,16 +14,23 @@
             </StackPanel>
             
             <StackPanel Margin="0 0 0 10" HorizontalAlignment="Center" Orientation="Vertical">
+                <TextBlock Width="150" Margin="0 0 0 10" HorizontalAlignment="Center">ID Проверки</TextBlock>
                 <TextBox Width="150" Margin="0 0 0 10" HorizontalAlignment="Center" Name="idTextBox"></TextBox>
+                <TextBlock Width="150" Margin="0 0 0 10" HorizontalAlignment="Center">Сотрудник</TextBlock>
                 <ComboBox Width="150" Margin="0 0 0 10" HorizontalAlignment="Center" Name="EmployeeComboBox"></ComboBox>
+                <TextBlock Width="150" Margin="0 0 0 10" HorizontalAlignment="Center">Среда</TextBlock>
                 <ComboBox Width="150" Margin="0 0 0 10" HorizontalAlignment="Center" Name="DepartmentComboBox"></ComboBox>
+                <TextBlock Width="150" Margin="0 0 0 10" HorizontalAlignment="Center">Область</TextBlock>
                 <ComboBox Width="150" Margin="0 0 0 10" HorizontalAlignment="Center" Name="AreaComboBox"></ComboBox>
+                <TextBlock Width="150" Margin="0 0 0 10" HorizontalAlignment="Center">Дата проверки</TextBlock>
                 <DatePicker Margin="0 0 0 10" HorizontalAlignment="Center"  Name="DateTextBox"></DatePicker>
+                <TextBlock Width="150" Margin="0 0 0 10" HorizontalAlignment="Center">Результат</TextBlock>
                 <ComboBox Width="150" HorizontalAlignment="Center"  Name="ResultComboBox"></ComboBox>
             </StackPanel>
             
             <StackPanel HorizontalAlignment="Center" >
-                <Button HorizontalAlignment="Center"  Click="AddChecking">Добавить</Button>
+                <Button HorizontalAlignment="Center"  Click="EditChecking">Сохранить</Button>
+                <Button HorizontalAlignment="Center"  Click="Cancel">Отменить</Button>
             </StackPanel>
             
         </StackPanel>
