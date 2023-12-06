@@ -1,0 +1,31 @@
+﻿<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        x:Class="FinalProject.CheckingEditWindow"
+        Icon="icons/search.png"
+        Title="Редактирование проверки">
+    <Grid>
+        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+            
+            <StackPanel Margin="0 0 0 10" HorizontalAlignment="Center" >
+                <TextBlock HorizontalAlignment="Center" >Редактирование</TextBlock>
+            </StackPanel>
+            
+            <StackPanel Margin="0 0 0 10" HorizontalAlignment="Center" Orientation="Vertical">
+                <TextBox Width="150" Margin="0 0 0 10" HorizontalAlignment="Center" Name="idTextBox"></TextBox>
+                <ComboBox Width="150" Margin="0 0 0 10" HorizontalAlignment="Center" Name="EmployeeComboBox"></ComboBox>
+                <ComboBox Width="150" Margin="0 0 0 10" HorizontalAlignment="Center" Name="DepartmentComboBox"></ComboBox>
+                <ComboBox Width="150" Margin="0 0 0 10" HorizontalAlignment="Center" Name="AreaComboBox"></ComboBox>
+                <DatePicker Margin="0 0 0 10" HorizontalAlignment="Center"  Name="DateTextBox"></DatePicker>
+                <ComboBox Width="150" HorizontalAlignment="Center"  Name="ResultComboBox"></ComboBox>
+            </StackPanel>
+            
+            <StackPanel HorizontalAlignment="Center" >
+                <Button HorizontalAlignment="Center"  Click="AddChecking">Добавить</Button>
+            </StackPanel>
+            
+        </StackPanel>
+    </Grid>
+</Window>

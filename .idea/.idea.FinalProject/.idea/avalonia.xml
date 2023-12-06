@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AvaloniaProject">
+    <option name="projectPerEditor">
+      <map>
+        <entry key="FinalProject/AreaAddWindow.axaml" value="FinalProject/FinalProject.csproj" />
+        <entry key="FinalProject/AreasWindow.axaml" value="FinalProject/FinalProject.csproj" />
+        <entry key="FinalProject/CheckingAddWindow.axaml" value="FinalProject/FinalProject.csproj" />
+        <entry key="FinalProject/CheckingEditWindow.axaml" value="FinalProject/FinalProject.csproj" />
+        <entry key="FinalProject/CheckingWindow.axaml" value="FinalProject/FinalProject.csproj" />
+        <entry key="FinalProject/MainWindow.axaml" value="FinalProject/FinalProject.csproj" />
+      </map>
+    </option>
+  </component>
+</project>

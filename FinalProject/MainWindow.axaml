@@ -1,0 +1,43 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        x:Class="FinalProject.MainWindow"
+        Icon="../icons/galaxy.png"
+        Title="Меню">
+    <Grid>
+        <StackPanel Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Center">
+            
+            <StackPanel Orientation="Vertical">
+                <Image Classes="Rotating" Margin="0 0 0 20" Height="125" Width="125" Source="icons/earth2.png"></Image>
+                <TextBlock Foreground="White" FontSize="25">Окружающая среда</TextBlock>
+            </StackPanel>
+            
+            <StackPanel Margin="0 20 0 0">
+                <Button Click="Button_OnClick" Margin="0 0 0 10" HorizontalContentAlignment="Center" Width="150" FontSize="15" HorizontalAlignment="Center" Foreground="white" Background="Purple">Проверки</Button>
+                <Button Click="AreasWindow" Margin="0 0 0 10" HorizontalContentAlignment="Center" Width="150" FontSize="15" HorizontalAlignment="Center" Foreground="white" Background="Purple">Сотрудники</Button>
+                <Button Click="Exit" HorizontalContentAlignment="Center" Width="150" FontSize="15" HorizontalAlignment="Center" Foreground="white" Background="Purple">Выход</Button>
+            </StackPanel>
+            
+        </StackPanel>
+    </Grid>
+    
+    <Window.Styles>
+        <Style Selector="Image.Rotating">
+            <Style.Animations>
+                <Animation Duration="1:0:0">
+                    <KeyFrame Cue="0%">
+                        <Setter Property="RotateTransform.Angle" Value="0"/>
+                    </KeyFrame>
+                    <KeyFrame Cue="100%">
+                        <Setter Property="RotateTransform.Angle" Value="30000"/>
+                    </KeyFrame>
+                </Animation>
+            </Style.Animations>
+        </Style>
+    </Window.Styles>
+    <Window.Background>
+        <ImageBrush Stretch="Fill" Source="backgrounds/cosmos2jpg.jpg"/>
+    </Window.Background>
+</Window>

@@ -1,0 +1,56 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        x:Class="FinalProject.AreasWindow"
+        Icon="icons/search.png"
+        Title="Области">
+    <Grid>
+        <StackPanel Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Center">
+            
+            <StackPanel Orientation="Vertical" HorizontalAlignment="Center">
+                <TextBlock Foreground="White" FontSize="40"> Области </TextBlock>
+            </StackPanel>
+            
+            <StackPanel Orientation="Horizontal" Margin="0 30 0 30" HorizontalAlignment="Center"> 
+                <TextBlock Foreground="white" VerticalAlignment="Center">Введите название области для поиска</TextBlock>
+                <TextBox Name="txtSearch" Width="200" Margin="5 0 5 0" TextChanged="TxtSearch_OnTextChanged"></TextBox>
+            </StackPanel>
+            
+            <StackPanel Margin="0 20 0 20" Orientation="Horizontal" HorizontalAlignment="Center">
+                <Button Click="Sorting" HorizontalContentAlignment="Center" Width="150" FontSize="15" HorizontalAlignment="Center" Foreground="white" Background="DimGray">Сортировать</Button>
+            </StackPanel>
+            
+            <StackPanel>
+                <DataGrid Height="300" Background="Indigo" x:Name="AreaGrid"  x:CompileBindings="False" IsReadOnly="True">
+                    <DataGrid.Columns>
+                        <DataGridTextColumn Foreground="White" Binding="{Binding Area_ID}" Header="Area_ID"></DataGridTextColumn>
+                        <DataGridTextColumn Foreground="White" Binding="{Binding Name}" Header="Name"></DataGridTextColumn>
+                    </DataGrid.Columns>
+                </DataGrid>
+            </StackPanel>
+            
+            <StackPanel Margin="0 20 0 0" Orientation="Vertical">
+                
+                <StackPanel Margin="0 10 0 10" Orientation="Horizontal" HorizontalAlignment="Center">
+                    <Button Click="AddChecking" HorizontalContentAlignment="Center" Width="150" FontSize="15" HorizontalAlignment="Center" Foreground="white" Background="ForestGreen">Добавить</Button>
+                    <StackPanel Margin="10 0 10 0" Orientation="Vertical" HorizontalAlignment="Center">
+                        <TextBox Name="idTextBox" Width="150" Watermark="ID" HorizontalAlignment="Center"></TextBox>
+                        <Button Click="Delete" Margin="10 10 0 0" HorizontalContentAlignment="Center" Width="150" FontSize="15" HorizontalAlignment="Center" Foreground="white" Background="DarkRed">Удалить</Button>
+                    </StackPanel>
+                </StackPanel>
+                
+                <StackPanel>
+                    <Button Click="Button_OnClick" HorizontalContentAlignment="Center" Width="150" FontSize="15" HorizontalAlignment="Center" Foreground="white" Background="DimGray">В меню</Button>
+                </StackPanel>
+                
+            </StackPanel>
+            
+        </StackPanel>
+    </Grid>
+    
+    <Window.Background>
+        <ImageBrush Stretch="Fill" Source="backgrounds/cosmos2jpg.jpg"/>
+    </Window.Background>
+</Window>
